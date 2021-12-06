@@ -45,24 +45,18 @@
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tQE-5F-QZv">
                                                         <rect key="frame" x="133" y="0.0" width="128" height="145"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="">
-                                                            <backgroundConfiguration key="background">
-                                                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
-                                                            </backgroundConfiguration>
-                                                        </buttonConfiguration>
+                                                        <buttonConfiguration key="configuration" style="plain" title=""/>
                                                         <connections>
                                                             <action selector="b2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SF1-U6-pKp"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VxI-6k-f6W">
                                                         <rect key="frame" x="266" y="0.0" width="128" height="145"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="">
-                                                            <backgroundConfiguration key="background">
-                                                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
-                                                            </backgroundConfiguration>
-                                                        </buttonConfiguration>
+                                                        <buttonConfiguration key="configuration" style="plain" title=""/>
                                                         <connections>
                                                             <action selector="b3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EYP-WQ-8ho"/>
                                                         </connections>
@@ -74,36 +68,27 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tBw-HO-r8f">
                                                         <rect key="frame" x="0.0" y="0.0" width="128" height="145"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="">
-                                                            <backgroundConfiguration key="background">
-                                                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
-                                                            </backgroundConfiguration>
-                                                        </buttonConfiguration>
+                                                        <buttonConfiguration key="configuration" style="plain" title=""/>
                                                         <connections>
                                                             <action selector="b4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pLr-tg-iIt"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sLn-jw-0iz">
                                                         <rect key="frame" x="133" y="0.0" width="128" height="145"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="">
-                                                            <backgroundConfiguration key="background">
-                                                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
-                                                            </backgroundConfiguration>
-                                                        </buttonConfiguration>
+                                                        <buttonConfiguration key="configuration" style="plain" title=""/>
                                                         <connections>
                                                             <action selector="b5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9af-eW-Jve"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CK8-Fj-GnX">
                                                         <rect key="frame" x="266" y="0.0" width="128" height="145"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="">
-                                                            <backgroundConfiguration key="background">
-                                                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
-                                                            </backgroundConfiguration>
-                                                        </buttonConfiguration>
+                                                        <buttonConfiguration key="configuration" style="plain" title=""/>
                                                         <connections>
                                                             <action selector="b6:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VjY-3l-D8b"/>
                                                         </connections>
@@ -115,36 +100,27 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lvJ-RX-IFm">
                                                         <rect key="frame" x="0.0" y="0.0" width="128" height="145"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain">
-                                                            <backgroundConfiguration key="background">
-                                                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
-                                                            </backgroundConfiguration>
-                                                        </buttonConfiguration>
+                                                        <buttonConfiguration key="configuration" style="plain"/>
                                                         <connections>
                                                             <action selector="b7:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cly-bg-7xQ"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9dJ-21-nx5">
                                                         <rect key="frame" x="133" y="0.0" width="128" height="145"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain">
-                                                            <backgroundConfiguration key="background">
-                                                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
-                                                            </backgroundConfiguration>
-                                                        </buttonConfiguration>
+                                                        <buttonConfiguration key="configuration" style="plain"/>
                                                         <connections>
                                                             <action selector="b8:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NUu-el-6h5"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UDL-Rr-e13">
                                                         <rect key="frame" x="266" y="0.0" width="128" height="145"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain">
-                                                            <backgroundConfiguration key="background">
-                                                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
-                                                            </backgroundConfiguration>
-                                                        </buttonConfiguration>
+                                                        <buttonConfiguration key="configuration" style="plain"/>
                                                         <connections>
                                                             <action selector="b9:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SEw-SH-2CM"/>
                                                         </connections>
@@ -200,6 +176,13 @@
                     <connections>
                         <outlet property="b1" destination="uRM-Do-Bmy" id="IRx-wg-UEY"/>
                         <outlet property="b2" destination="tQE-5F-QZv" id="Wyr-Zo-xPI"/>
+                        <outlet property="b3" destination="VxI-6k-f6W" id="7hh-FX-fuE"/>
+                        <outlet property="b4" destination="tBw-HO-r8f" id="AIN-TM-Rxx"/>
+                        <outlet property="b5" destination="sLn-jw-0iz" id="bC9-fI-FrJ"/>
+                        <outlet property="b6" destination="CK8-Fj-GnX" id="4PD-LT-7D9"/>
+                        <outlet property="b7" destination="lvJ-RX-IFm" id="Xy1-2Q-sEj"/>
+                        <outlet property="b8" destination="9dJ-21-nx5" id="5qE-xg-JA7"/>
+                        <outlet property="b9" destination="UDL-Rr-e13" id="piA-T6-OKg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -208,9 +191,6 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
