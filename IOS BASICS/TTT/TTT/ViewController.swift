@@ -66,8 +66,20 @@ class ViewController: UIViewController {
         reset()
     }
     
-    func checkWon(){
-        
+    @IBOutlet weak var lblWon: UILabel!
+    
+    func checkWon(color: UIColor, won: String){
+        if b1.backgroundColor == color && b2.backgroundColor == color && b3.backgroundColor == color {
+            lblWon.text = "Congrate \(won) Won!"
+        }else if b4.backgroundColor == color && b5.backgroundColor == color && b6.backgroundColor == color {
+            
+        }else if b7.backgroundColor == color && b8.backgroundColor == color && b9.backgroundColor == color {
+            
+        }else if b1.backgroundColor == color && b5.backgroundColor == color && b9.backgroundColor == color {
+            
+        }else if b3.backgroundColor == color && b5.backgroundColor == color && b7.backgroundColor == color {
+            
+        }
     }
     func reset(){
         b1.backgroundColor = UIColor.lightGray
@@ -84,9 +96,11 @@ class ViewController: UIViewController {
         if sender.backgroundColor == UIColor.lightGray{
             if player == "Red"{
                 sender.backgroundColor = UIColor.red
+                checkWon(color: UIColor.red, won: "Red")
                 player = "Blue"
             }else{
                 sender.backgroundColor = UIColor.blue
+                checkWon(color: UIColor.red, won: "Blue")
                 player = "Red"
             }
         }

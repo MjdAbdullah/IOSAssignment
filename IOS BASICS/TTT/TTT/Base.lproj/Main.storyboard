@@ -128,9 +128,6 @@
                                                 </subviews>
                                             </stackView>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="445" id="xec-uG-I5s"/>
-                                        </constraints>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aKn-eb-YKO">
                                         <rect key="frame" x="0.0" y="653" width="394" height="50"/>
@@ -183,6 +180,7 @@
                         <outlet property="b7" destination="lvJ-RX-IFm" id="Xy1-2Q-sEj"/>
                         <outlet property="b8" destination="9dJ-21-nx5" id="5qE-xg-JA7"/>
                         <outlet property="b9" destination="UDL-Rr-e13" id="piA-T6-OKg"/>
+                        <outlet property="lblWon" destination="aKn-eb-YKO" id="UAe-7g-Gl7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
