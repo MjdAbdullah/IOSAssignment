@@ -13,6 +13,7 @@
 		8447925D2767E570002BFA0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8447925B2767E570002BFA0E /* Main.storyboard */; };
 		8447925F2767E572002BFA0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8447925E2767E572002BFA0E /* Assets.xcassets */; };
 		844792622767E572002BFA0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844792602767E572002BFA0E /* LaunchScreen.storyboard */; };
+		8447928A27682754002BFA0E /* SecandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8447928927682754002BFA0E /* SecandViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		8447925E2767E572002BFA0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		844792612767E572002BFA0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		844792632767E572002BFA0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8447928927682754002BFA0E /* SecandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecandViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				844792552767E570002BFA0E /* AppDelegate.swift */,
 				844792572767E570002BFA0E /* SceneDelegate.swift */,
 				844792592767E570002BFA0E /* ViewController.swift */,
+				8447928927682754002BFA0E /* SecandViewController.swift */,
 				8447925B2767E570002BFA0E /* Main.storyboard */,
 				8447925E2767E572002BFA0E /* Assets.xcassets */,
 				844792602767E572002BFA0E /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				8447925A2767E570002BFA0E /* ViewController.swift in Sources */,
 				844792562767E570002BFA0E /* AppDelegate.swift in Sources */,
+				8447928A27682754002BFA0E /* SecandViewController.swift in Sources */,
 				844792582767E570002BFA0E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

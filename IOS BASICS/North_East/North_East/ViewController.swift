@@ -14,6 +14,28 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func bEast(_ sender: UIButton) {
+        let vcSecond = storyboard?.instantiateViewController(withIdentifier: "secand") as! SecandViewController
+        vcSecond.message = "East"
+        present(vcSecond, animated: true, completion: nil)
+        
+    }
+    @IBAction func bSouth(_ sender: UIButton) {
+        let vcSecond = storyboard?.instantiateViewController(withIdentifier: "secand") as! SecandViewController
+        vcSecond.message = "South"
+        present(vcSecond, animated: true, completion: nil)
+    }
+    @IBAction func bNoth(_ sender: UIButton) {
+        let vcSecond = storyboard?.instantiateViewController(withIdentifier: "secand") as! SecandViewController
+        vcSecond.message = "Noth"
+        present(vcSecond, animated: true, completion: nil)
+    }
+    @IBAction func bWest(_ sender: UIButton) {
+        let vcSecond = storyboard?.instantiateViewController(withIdentifier: "secand") as! SecandViewController
+        vcSecond.message = "West"
+        present(vcSecond, animated: true, completion: nil)
+    }
+    
+    
 }
 
