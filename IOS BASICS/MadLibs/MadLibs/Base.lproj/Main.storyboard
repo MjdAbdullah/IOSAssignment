@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="70M-3Q-ZDX">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="70M-3Q-ZDX">
                                 <rect key="frame" x="20" y="448" width="374" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -56,18 +56,18 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="109.82142857142857"/>
         </scene>
-        <!--View Controller-->
+        <!--Secand View Controller-->
         <scene sceneID="3iL-WZ-YXy">
             <objects>
-                <viewController id="awR-nK-8MA" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="secand" modalPresentationStyle="fullScreen" id="awR-nK-8MA" customClass="SecandViewController" customModule="MadLibs" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="saR-Va-cZ6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="r0L-Ke-ngV">
-                                <rect key="frame" x="20" y="54" width="374" height="177.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="r0L-Ke-ngV">
+                                <rect key="frame" x="20" y="54" width="374" height="153"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3eh-mn-oDL">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Adjective" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3eh-mn-oDL">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="iVX-6w-mhA"/>
@@ -75,66 +75,78 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4J9-bI-2Dk">
-                                        <rect key="frame" x="0.0" y="30" width="374" height="30"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Verb" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4J9-bI-2Dk">
+                                        <rect key="frame" x="0.0" y="41" width="374" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="PNB-44-ECl"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JyY-ix-TZ8">
-                                        <rect key="frame" x="0.0" y="60" width="374" height="30"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Verb" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JyY-ix-TZ8">
+                                        <rect key="frame" x="0.0" y="82" width="374" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="t7K-mQ-CXQ"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HMG-Nn-hfc">
-                                        <rect key="frame" x="0.0" y="90" width="374" height="30"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="None" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HMG-Nn-hfc">
+                                        <rect key="frame" x="0.0" y="123" width="374" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="lAg-kR-4ak"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jNc-Dj-yul">
-                                        <rect key="frame" x="0.0" y="120" width="374" height="17.5"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="9Bc-70-vLG"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZgJ-tm-2NG">
-                                        <rect key="frame" x="0.0" y="137.5" width="374" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="Qeq-Bj-CwE"/>
-                                        </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="4J9-bI-2Dk" firstAttribute="width" secondItem="r0L-Ke-ngV" secondAttribute="width" id="A8b-HY-5Cz"/>
-                                    <constraint firstItem="jNc-Dj-yul" firstAttribute="width" secondItem="r0L-Ke-ngV" secondAttribute="width" id="NYj-kT-ffK"/>
                                     <constraint firstItem="3eh-mn-oDL" firstAttribute="width" secondItem="r0L-Ke-ngV" secondAttribute="width" id="fJC-va-9up"/>
                                     <constraint firstItem="JyY-ix-TZ8" firstAttribute="width" secondItem="r0L-Ke-ngV" secondAttribute="width" id="jVZ-o4-0qy"/>
                                     <constraint firstItem="HMG-Nn-hfc" firstAttribute="width" secondItem="r0L-Ke-ngV" secondAttribute="width" id="qlK-nF-3zI"/>
+                                    <constraint firstItem="4J9-bI-2Dk" firstAttribute="top" secondItem="3eh-mn-oDL" secondAttribute="bottom" constant="11" id="uxu-si-cgE"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZgJ-tm-2NG">
+                                <rect key="frame" x="166" y="227" width="82.5" height="40"/>
+                                <color key="backgroundColor" red="0.52062148837214073" green="0.52107130015494674" blue="0.91414141414141414" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="yFI-0t-6QZ"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Submit">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="bSubmit:" destination="awR-nK-8MA" eventType="touchUpInside" id="MiP-qG-jk6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YJc-fD-phX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="ZgJ-tm-2NG" firstAttribute="centerX" secondItem="YJc-fD-phX" secondAttribute="centerX" id="Fdu-iZ-7cG"/>
                             <constraint firstItem="r0L-Ke-ngV" firstAttribute="centerX" secondItem="YJc-fD-phX" secondAttribute="centerX" id="JOF-t3-a9p"/>
+                            <constraint firstItem="ZgJ-tm-2NG" firstAttribute="top" secondItem="r0L-Ke-ngV" secondAttribute="bottom" constant="20" id="Tgm-EP-DM2"/>
                             <constraint firstItem="r0L-Ke-ngV" firstAttribute="leading" secondItem="YJc-fD-phX" secondAttribute="leading" constant="20" id="dRV-qM-wxH"/>
                             <constraint firstItem="YJc-fD-phX" firstAttribute="trailing" secondItem="r0L-Ke-ngV" secondAttribute="trailing" constant="20" id="erB-rL-Gd0"/>
                             <constraint firstItem="YJc-fD-phX" firstAttribute="bottom" secondItem="r0L-Ke-ngV" secondAttribute="bottom" constant="20" id="lPe-Ck-AmE"/>
                             <constraint firstItem="r0L-Ke-ngV" firstAttribute="top" secondItem="YJc-fD-phX" secondAttribute="top" constant="10" id="tKM-6A-rk6"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="lPe-Ck-AmE"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="tfAdjective" destination="3eh-mn-oDL" id="Nky-pw-0vT"/>
+                        <outlet property="tfNone" destination="HMG-Nn-hfc" id="uC3-P3-u3x"/>
+                        <outlet property="tfVerb" destination="JyY-ix-TZ8" id="9kX-J3-aaE"/>
+                        <outlet property="tfVerb2" destination="JyY-ix-TZ8" id="gFT-Yk-2MW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DVk-Ro-2Ep" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
