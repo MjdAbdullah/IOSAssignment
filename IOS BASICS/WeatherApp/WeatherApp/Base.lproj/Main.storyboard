@@ -90,6 +90,15 @@
                             <constraint firstItem="gdk-q0-2cb" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="vz0-96-gNe"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lblCloud" destination="YpU-Tz-HYi" id="Qkr-dL-Npn"/>
+                        <outlet property="lblFeels" destination="NWJ-s1-hUQ" id="eAJ-h5-VY9"/>
+                        <outlet property="lblHearest" destination="voD-O8-kTN" id="4i6-a2-08B"/>
+                        <outlet property="lblHumidity" destination="8tS-cF-7wx" id="TUb-bH-VPw"/>
+                        <outlet property="lblPrecioitation" destination="Pzu-jY-wvQ" id="DfB-JL-6mM"/>
+                        <outlet property="lblTime" destination="Qd2-vC-fRg" id="0iR-5e-pk5"/>
+                        <outlet property="lblWindspeed" destination="hUT-Oh-5jU" id="68o-PR-9gc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
