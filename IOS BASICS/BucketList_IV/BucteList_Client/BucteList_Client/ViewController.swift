@@ -12,6 +12,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var tableView: UITableView!
     
     var tasks = [NSDictionary]()
+    var indx: IndexPath?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +42,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let viewC = segue.destination as! AddViewController
         viewC.delegate = self
+        if let taskEdit = sender as? NSDictionary {
+            viewC.idex = self.indx
+            viewC.taskEdit = taskEdit
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.indx = indexPath
+        performSegue(withIdentifier: "AddSegue", sender: indx)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
