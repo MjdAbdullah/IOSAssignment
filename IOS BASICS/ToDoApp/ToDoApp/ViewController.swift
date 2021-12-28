@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, AddItemDelegate{
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     let context = ( UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
@@ -42,18 +42,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         return cell
     }
-    
-    func cancelButtonPressed(by controller: AddTableViewController) {
-        dismiss(animated: true, completion: nil)
-    }
-    
-    func itemSaved(by controller: AddTableViewController, titel: String, description: String, date: Date, done: Bool) {
-        
-    }
+
     
     // -----------------------------------------------------------------------
     // Core Data
-    
     func getAllTask() {
         do{
             taskList = try context.fetch(TaskEntity.fetchRequest())
@@ -62,8 +54,27 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             print("can't get data")
         }
     }
-    
-    
+    // add new task
+    func createTask(title: String, description: String, date: Date, done: Bool){
+        let newTask = TaskEntity(context: context)
+        newTask.title = title
+        newTask.descrption = description
+        newTask.date = date
+        do{
+            try context.save()
+            // update the list in the table view
+            getAllTask()
+        }catch{
+            print("Can't add new Item")
+        }
+    }
 
+}
+
+extension ViewController : AddTaskDelegate {
+    func itemSaved(title: String, description: String, date: Date, done: Bool) {
+        createTask(title: title, description: description, date: date, done: done)
+        dismiss(animated: true, completion: nil)
+    }
 }
 
