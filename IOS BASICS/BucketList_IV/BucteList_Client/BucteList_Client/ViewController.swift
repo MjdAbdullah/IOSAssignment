@@ -13,7 +13,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var tfNewTask: UITextField!
     @IBOutlet weak var bAdd: UIButton!
     
-    var tasks = [String]()
+    var tasks = [NSDictionary]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,8 +25,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         TaskModel.getAllTasks() {
                    data, response, error in
                    do {
-                       if let tasks = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSArray {
-                           print(tasks)
+                       if let jsonResult = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSArray {
+                           for task in jsonResult {
+                               let taskDict = task as! NSDictionary
+                               self.tasks.append(taskDict)
+                           }
+                       }
+                       DispatchQueue.main.async {
+                           self.tableView.reloadData()
                        }
                    } catch {
                        print("Something went wrong")
@@ -38,7 +44,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = tasks[indexPath.row]
+        cell.textLabel?.text = tasks[indexPath.row]["objective"] as? String
         return cell
     }
 
