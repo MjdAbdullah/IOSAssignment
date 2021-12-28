@@ -14,6 +14,7 @@
 		849868C5277A457E00395C42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 849868C4277A457E00395C42 /* Assets.xcassets */; };
 		849868C8277A457E00395C42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849868C6277A457E00395C42 /* LaunchScreen.storyboard */; };
 		849868D0277A47AE00395C42 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849868CF277A47AE00395C42 /* TaskModel.swift */; };
+		849868D2277B043C00395C42 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849868D1277B043C00395C42 /* AddViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		849868C7277A457E00395C42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		849868C9277A457E00395C42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		849868CF277A47AE00395C42 /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
+		849868D1277B043C00395C42 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				849868BB277A457C00395C42 /* AppDelegate.swift */,
 				849868BD277A457C00395C42 /* SceneDelegate.swift */,
 				849868BF277A457C00395C42 /* ViewController.swift */,
+				849868D1277B043C00395C42 /* AddViewController.swift */,
 				849868C1277A457C00395C42 /* Main.storyboard */,
 				849868CF277A47AE00395C42 /* TaskModel.swift */,
 				849868C4277A457E00395C42 /* Assets.xcassets */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				849868D2277B043C00395C42 /* AddViewController.swift in Sources */,
 				849868C0277A457C00395C42 /* ViewController.swift in Sources */,
 				849868BC277A457C00395C42 /* AppDelegate.swift in Sources */,
 				849868D0277A47AE00395C42 /* TaskModel.swift in Sources */,

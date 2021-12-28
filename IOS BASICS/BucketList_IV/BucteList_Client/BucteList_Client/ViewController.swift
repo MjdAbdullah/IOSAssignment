@@ -10,27 +10,6 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var tfNewTask: UITextField!
-    @IBAction func bAdd(_ sender: Any) {
-        print("here")
-        if let newTask = tfNewTask.text {
-            print("here")
-            TaskModel.addTask(objective: newTask, completion: {
-                data, response, error in
-                if data != nil {
-                    do {
-                        let jsonData = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableContainers) as! NSDictionary
-                        DispatchQueue.main.async {
-                            self.getData()
-                        }
-                    }catch {
-                        print("error: \(error)")
-                    }
-                }
-            })
-        }
-    }
-    
     
     var tasks = [NSDictionary]()
     
@@ -40,11 +19,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         tableView.delegate = self
         tableView.dataSource = self
-        getData()
-        
-    }
-    
-    func getData(){
         TaskModel.getAllTasks() {
                    data, response, error in
                    do {
@@ -61,6 +35,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                        print("Something went wrong")
                    }
                }
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let viewC = segue.destination as! AddViewController
+        viewC.delegate = self
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
