@@ -11,7 +11,26 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var tfNewTask: UITextField!
-    @IBOutlet weak var bAdd: UIButton!
+    @IBAction func bAdd(_ sender: Any) {
+        print("here")
+        if let newTask = tfNewTask.text {
+            print("here")
+            TaskModel.addTask(objective: newTask, completion: {
+                data, response, error in
+                if data != nil {
+                    do {
+                        let jsonData = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableContainers) as! NSDictionary
+                        DispatchQueue.main.async {
+                            self.getData()
+                        }
+                    }catch {
+                        print("error: \(error)")
+                    }
+                }
+            })
+        }
+    }
+    
     
     var tasks = [NSDictionary]()
     
@@ -21,7 +40,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         tableView.delegate = self
         tableView.dataSource = self
+        getData()
         
+    }
+    
+    func getData(){
         TaskModel.getAllTasks() {
                    data, response, error in
                    do {
@@ -39,6 +62,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                    }
                }
     }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tasks.count
     }

@@ -47,6 +47,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="ADD">
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="bAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8OB-Jt-6ki"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -64,7 +67,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="bAdd" destination="zXn-iz-8JK" id="d1E-eV-Asj"/>
                         <outlet property="tableView" destination="JdP-KW-sCQ" id="YIA-60-WGj"/>
                         <outlet property="tfNewTask" destination="CYh-Ug-qTE" id="X20-fx-1II"/>
                     </connections>
