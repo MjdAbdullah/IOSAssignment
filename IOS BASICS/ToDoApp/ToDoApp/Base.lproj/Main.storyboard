@@ -132,7 +132,7 @@
                                 </subviews>
                             </stackView>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="3gJ-qf-pNz">
-                                <rect key="frame" x="10" y="233" width="394" height="216"/>
+                                <rect key="frame" x="10" y="232.5" width="394" height="216"/>
                             </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eoM-mQ-Wsq">
                                 <rect key="frame" x="10" y="804" width="394" height="38"/>
