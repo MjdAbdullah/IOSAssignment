@@ -11,13 +11,13 @@ import Foundation
 class SportTableViewCell: UITableViewCell {
     
     var imagePicker = UIImagePickerController()
-
+    
     @IBOutlet weak var lblName: UILabel!
     @IBOutlet weak var ivSport: UIImageView!
     @IBAction func bAddImage(_ sender: Any) {
         imagePicker.sourceType = .photoLibrary
         imagePicker.allowsEditing = true
-        //present(imagePicker, animated: true)
+        //imagePicker.present(imagePicker, animated: true)
     }
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -43,15 +43,15 @@ class SportTableViewCell: UITableViewCell {
 extension SportTableViewCell : UIImagePickerControllerDelegate & UINavigationControllerDelegate {
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        //let image = ifo["UI"]
+        guard let image = info[.originalImage] as? UIImage else {
+            return
+        }
+        ivSport.image = image
+        imagePicker.dismiss(animated: true, completion: nil)
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         picker.dismiss(animated: true, completion: nil)
-    }
-    
-    func getPhoto(){
-        
     }
     
 }

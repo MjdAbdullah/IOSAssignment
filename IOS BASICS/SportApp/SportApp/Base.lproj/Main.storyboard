@@ -12,7 +12,7 @@
         <!--Sport View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SportViewController" customModule="SportApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SportViewController" id="BYZ-38-t0r" customClass="SportViewController" customModule="SportApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YaW-8g-4TW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -29,55 +29,48 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V1d-cd-41q">
-                                                    <rect key="frame" x="135" y="14" width="236" height="102"/>
+                                                    <rect key="frame" x="141" y="14" width="230" height="82"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oAt-4f-p4E">
-                                                    <rect key="frame" x="3" y="3" width="124" height="124"/>
+                                                    <rect key="frame" x="3" y="3" width="130" height="124"/>
                                                     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </imageView>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GND-ZC-HBa" customClass="imageUIView" customModule="SportApp" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
-                                                    <subviews>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yCW-QK-tVE">
-                                                            <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
-                                                            <state key="normal" title="Button"/>
-                                                            <buttonConfiguration key="configuration" style="plain" title="Add Image"/>
-                                                            <connections>
-                                                                <action selector="bAddImage:" destination="Jgv-Xe-88U" eventType="touchUpInside" id="3WK-BV-1H6"/>
-                                                            </connections>
-                                                        </button>
-                                                    </subviews>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
-                                                        <constraint firstItem="yCW-QK-tVE" firstAttribute="top" secondItem="GND-ZC-HBa" secondAttribute="top" id="B7d-pw-fcM"/>
-                                                        <constraint firstAttribute="trailing" secondItem="yCW-QK-tVE" secondAttribute="trailing" id="BLE-jF-YgD"/>
-                                                        <constraint firstAttribute="bottom" secondItem="yCW-QK-tVE" secondAttribute="bottom" id="YPo-b8-SCU"/>
-                                                        <constraint firstAttribute="width" constant="130" id="eAf-TD-yDj"/>
-                                                        <constraint firstItem="yCW-QK-tVE" firstAttribute="leading" secondItem="GND-ZC-HBa" secondAttribute="leading" id="kxk-Fy-fIt"/>
+                                                        <constraint firstAttribute="width" constant="130" id="6QF-zR-Psm"/>
                                                     </constraints>
-                                                </view>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSZ-1K-HoT">
+                                                    <rect key="frame" x="133" y="99" width="241" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="2OM-5P-XPm"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" title="Add Image"/>
+                                                    <connections>
+                                                        <action selector="bAddImage:" destination="fMf-pe-LdJ" eventType="touchUpInside" id="Gdi-bB-O45"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="SSZ-1K-HoT" firstAttribute="leading" secondItem="oAt-4f-p4E" secondAttribute="trailing" id="7q1-w6-I35"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="V1d-cd-41q" secondAttribute="trailing" constant="3" id="7qj-0B-330"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="SSZ-1K-HoT" secondAttribute="trailing" id="EfN-Cp-M8Q"/>
                                                 <constraint firstAttribute="bottom" secondItem="oAt-4f-p4E" secondAttribute="bottom" constant="3" id="ItE-c9-Jlf"/>
-                                                <constraint firstItem="GND-ZC-HBa" firstAttribute="leading" secondItem="ezO-dE-tZb" secondAttribute="leading" id="JmD-05-nZX"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="V1d-cd-41q" secondAttribute="bottom" constant="3" id="Lzn-de-jao"/>
                                                 <constraint firstItem="oAt-4f-p4E" firstAttribute="centerY" secondItem="ezO-dE-tZb" secondAttribute="centerY" id="NmB-f5-SgR"/>
-                                                <constraint firstItem="GND-ZC-HBa" firstAttribute="top" secondItem="ezO-dE-tZb" secondAttribute="top" id="Uca-xd-FX5"/>
                                                 <constraint firstItem="oAt-4f-p4E" firstAttribute="leading" secondItem="ezO-dE-tZb" secondAttribute="leading" constant="3" id="Vah-YP-xNK"/>
-                                                <constraint firstItem="GND-ZC-HBa" firstAttribute="centerY" secondItem="ezO-dE-tZb" secondAttribute="centerY" id="ZXS-Uz-L6l"/>
                                                 <constraint firstItem="V1d-cd-41q" firstAttribute="leading" secondItem="oAt-4f-p4E" secondAttribute="trailing" constant="8" id="al8-ne-e9y"/>
                                                 <constraint firstItem="V1d-cd-41q" firstAttribute="top" secondItem="ezO-dE-tZb" secondAttribute="topMargin" constant="3" id="gL8-eN-kJ7"/>
+                                                <constraint firstItem="SSZ-1K-HoT" firstAttribute="bottom" secondItem="ezO-dE-tZb" secondAttribute="bottomMargin" id="gpV-cA-hnC"/>
                                                 <constraint firstItem="oAt-4f-p4E" firstAttribute="top" secondItem="ezO-dE-tZb" secondAttribute="top" constant="3" id="hzD-bN-9PI"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="V1d-cd-41q" secondAttribute="bottom" constant="10" id="jxy-wu-q9s"/>
-                                                <constraint firstAttribute="bottom" secondItem="GND-ZC-HBa" secondAttribute="bottom" id="wNJ-Dh-mlB"/>
-                                                <constraint firstItem="V1d-cd-41q" firstAttribute="leading" secondItem="GND-ZC-HBa" secondAttribute="trailing" constant="5" id="ze3-XM-iZl"/>
+                                                <constraint firstItem="SSZ-1K-HoT" firstAttribute="top" secondItem="V1d-cd-41q" secondAttribute="bottom" constant="3" id="uZB-rH-rgl"/>
                                             </constraints>
                                             <variation key="default">
                                                 <mask key="constraints">
+                                                    <exclude reference="Lzn-de-jao"/>
                                                     <exclude reference="jxy-wu-q9s"/>
                                                 </mask>
                                             </variation>
@@ -111,7 +104,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <exit id="Jgv-Xe-88U" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="97.767857142857139"/>
         </scene>
