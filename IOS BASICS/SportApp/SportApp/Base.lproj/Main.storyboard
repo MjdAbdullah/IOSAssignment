@@ -29,33 +29,61 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V1d-cd-41q">
-                                                    <rect key="frame" x="139" y="21" width="215" height="88"/>
+                                                    <rect key="frame" x="135" y="14" width="236" height="102"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oNc-fk-dJB">
-                                                    <rect key="frame" x="30" y="16" width="94" height="98"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oAt-4f-p4E">
+                                                    <rect key="frame" x="3" y="3" width="124" height="124"/>
+                                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </imageView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GND-ZC-HBa" customClass="imageUIView" customModule="SportApp" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yCW-QK-tVE">
+                                                            <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" title="Add Image"/>
+                                                            <connections>
+                                                                <action selector="bAddImage:" destination="Jgv-Xe-88U" eventType="touchUpInside" id="3WK-BV-1H6"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="94" id="Ys0-M5-iw4"/>
+                                                        <constraint firstItem="yCW-QK-tVE" firstAttribute="top" secondItem="GND-ZC-HBa" secondAttribute="top" id="B7d-pw-fcM"/>
+                                                        <constraint firstAttribute="trailing" secondItem="yCW-QK-tVE" secondAttribute="trailing" id="BLE-jF-YgD"/>
+                                                        <constraint firstAttribute="bottom" secondItem="yCW-QK-tVE" secondAttribute="bottom" id="YPo-b8-SCU"/>
+                                                        <constraint firstAttribute="width" constant="130" id="eAf-TD-yDj"/>
+                                                        <constraint firstItem="yCW-QK-tVE" firstAttribute="leading" secondItem="GND-ZC-HBa" secondAttribute="leading" id="kxk-Fy-fIt"/>
                                                     </constraints>
-                                                    <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" title="add image"/>
-                                                </button>
+                                                </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailingMargin" secondItem="V1d-cd-41q" secondAttribute="trailing" constant="20" id="6NG-NO-H81"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="oNc-fk-dJB" secondAttribute="bottom" constant="5" id="Jyj-Vk-a6d"/>
-                                                <constraint firstItem="oNc-fk-dJB" firstAttribute="top" secondItem="ezO-dE-tZb" secondAttribute="topMargin" constant="5" id="NMW-xX-hEX"/>
-                                                <constraint firstItem="V1d-cd-41q" firstAttribute="leading" secondItem="oNc-fk-dJB" secondAttribute="trailing" constant="15" id="UaF-zB-nQb"/>
-                                                <constraint firstItem="oNc-fk-dJB" firstAttribute="centerY" secondItem="ezO-dE-tZb" secondAttribute="centerY" id="WQ7-D3-p6o"/>
-                                                <constraint firstItem="V1d-cd-41q" firstAttribute="centerY" secondItem="ezO-dE-tZb" secondAttribute="centerY" id="XsK-pr-USF"/>
-                                                <constraint firstItem="V1d-cd-41q" firstAttribute="top" secondItem="ezO-dE-tZb" secondAttribute="topMargin" constant="10" id="hPR-Xy-Doc"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="V1d-cd-41q" secondAttribute="trailing" constant="3" id="7qj-0B-330"/>
+                                                <constraint firstAttribute="bottom" secondItem="oAt-4f-p4E" secondAttribute="bottom" constant="3" id="ItE-c9-Jlf"/>
+                                                <constraint firstItem="GND-ZC-HBa" firstAttribute="leading" secondItem="ezO-dE-tZb" secondAttribute="leading" id="JmD-05-nZX"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="V1d-cd-41q" secondAttribute="bottom" constant="3" id="Lzn-de-jao"/>
+                                                <constraint firstItem="oAt-4f-p4E" firstAttribute="centerY" secondItem="ezO-dE-tZb" secondAttribute="centerY" id="NmB-f5-SgR"/>
+                                                <constraint firstItem="GND-ZC-HBa" firstAttribute="top" secondItem="ezO-dE-tZb" secondAttribute="top" id="Uca-xd-FX5"/>
+                                                <constraint firstItem="oAt-4f-p4E" firstAttribute="leading" secondItem="ezO-dE-tZb" secondAttribute="leading" constant="3" id="Vah-YP-xNK"/>
+                                                <constraint firstItem="GND-ZC-HBa" firstAttribute="centerY" secondItem="ezO-dE-tZb" secondAttribute="centerY" id="ZXS-Uz-L6l"/>
+                                                <constraint firstItem="V1d-cd-41q" firstAttribute="leading" secondItem="oAt-4f-p4E" secondAttribute="trailing" constant="8" id="al8-ne-e9y"/>
+                                                <constraint firstItem="V1d-cd-41q" firstAttribute="top" secondItem="ezO-dE-tZb" secondAttribute="topMargin" constant="3" id="gL8-eN-kJ7"/>
+                                                <constraint firstItem="oAt-4f-p4E" firstAttribute="top" secondItem="ezO-dE-tZb" secondAttribute="top" constant="3" id="hzD-bN-9PI"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="V1d-cd-41q" secondAttribute="bottom" constant="10" id="jxy-wu-q9s"/>
-                                                <constraint firstItem="oNc-fk-dJB" firstAttribute="leading" secondItem="ezO-dE-tZb" secondAttribute="leadingMargin" constant="10" id="t9B-3l-cYy"/>
+                                                <constraint firstAttribute="bottom" secondItem="GND-ZC-HBa" secondAttribute="bottom" id="wNJ-Dh-mlB"/>
+                                                <constraint firstItem="V1d-cd-41q" firstAttribute="leading" secondItem="GND-ZC-HBa" secondAttribute="trailing" constant="5" id="ze3-XM-iZl"/>
                                             </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="jxy-wu-q9s"/>
+                                                </mask>
+                                            </variation>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="ivSport" destination="oAt-4f-p4E" id="cZG-a4-0Zs"/>
                                             <outlet property="lblName" destination="V1d-cd-41q" id="ncT-bk-xbS"/>
                                         </connections>
                                     </tableViewCell>
@@ -83,6 +111,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="Jgv-Xe-88U" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="97.767857142857139"/>
         </scene>
@@ -98,13 +127,30 @@
                                 <rect key="frame" x="10" y="98" width="394" height="754"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PlayerCell" id="ziG-tw-lYv">
-                                        <rect key="frame" x="0.0" y="44.5" width="394" height="43.5"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PlayerCell" id="ziG-tw-lYv" customClass="PlayerTableViewCell" customModule="SportApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="394" height="63"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ziG-tw-lYv" id="iy1-Ny-Z0h">
-                                            <rect key="frame" x="0.0" y="0.0" width="394" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="394" height="63"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AJD-Ha-paU">
+                                                    <rect key="frame" x="30" y="21" width="334" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="AJD-Ha-paU" firstAttribute="top" secondItem="iy1-Ny-Z0h" secondAttribute="topMargin" constant="10" id="3Pf-9C-isK"/>
+                                                <constraint firstItem="AJD-Ha-paU" firstAttribute="leading" secondItem="iy1-Ny-Z0h" secondAttribute="leadingMargin" constant="10" id="Niz-iu-hat"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="AJD-Ha-paU" secondAttribute="bottom" constant="10" id="iRh-3p-jE1"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="AJD-Ha-paU" secondAttribute="trailing" constant="10" id="t8Z-Px-xD9"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lblName" destination="AJD-Ha-paU" id="6nX-af-4u3"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

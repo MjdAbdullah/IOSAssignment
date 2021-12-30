@@ -42,7 +42,6 @@ class PlayerViewController: UIViewController {
                   let hight = hightField.text, !hight.isEmpty else {
                       return
                   }
-            
             // Take text and Creat it in the list
             self?.addPlayer(name: name, age: age, hight: hight)
         }))
@@ -55,6 +54,7 @@ class PlayerViewController: UIViewController {
         // Do any additional setup after loading the view.
         tableView.delegate = self
         tableView.dataSource = self
+        title = sport.name
     }
 }
 
@@ -87,13 +87,13 @@ extension PlayerViewController: UITableViewDelegate, UITableViewDataSource {
         }
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "PlayerCell", for: indexPath)
-        if let playerList = sport?.players as? [PlayerEntity]{
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PlayerCell", for: indexPath) as! PlayerTableViewCell
+        if let playerList = sport?.players?.allObjects as? [PlayerEntity]{
             let playerObj = playerList[indexPath.row]
             let name = playerObj.name!
-            let age = playerObj.age
+            let age = playerObj.age!
             let hight = playerObj.hight!
-            cell.textLabel?.text = "\(name) - \(age) - \(hight) "
+            cell.setPlayer(name: name, age: age, hight: hight)
         }
         return cell
     }

@@ -108,8 +108,13 @@ extension SportViewController : UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SportCell", for: indexPath) as! SportTableViewCell
         let name = sportList[indexPath.row].name!
         cell.setName(name: name)
+        if sportList[indexPath.row].image != nil {
+            let image = sportList[indexPath.row].image!
+            cell.setImage(image: image)
+        }
         return cell
     }
+    
     // if the user swip from rigth -> trailing
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         // to know wich one that will delete
@@ -124,7 +129,7 @@ extension SportViewController : UITableViewDelegate, UITableViewDataSource {
         return UISwipeActionsConfiguration(actions: [deleteAction])
         
     }
-    
+    // if the user swip from left -> leading
     func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let sport = self.sportList[indexPath.row]
         let editAction = UIContextualAction(style: .normal, title: "Edit") { (action, view, completionHandler) in

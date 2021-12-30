@@ -20,6 +20,8 @@
 		8496CE7C277D763A0000C4DF /* PlayerEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496CE78277D763A0000C4DF /* PlayerEntity+CoreDataProperties.swift */; };
 		8496CE7E277D76640000C4DF /* SportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496CE7D277D76640000C4DF /* SportTableViewCell.swift */; };
 		8496CE80277D77400000C4DF /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496CE7F277D77400000C4DF /* PlayerViewController.swift */; };
+		8496CE82277D7A150000C4DF /* PlayerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496CE81277D7A150000C4DF /* PlayerTableViewCell.swift */; };
+		8496CE84277D804D0000C4DF /* imageUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496CE83277D804D0000C4DF /* imageUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		8496CE78277D763A0000C4DF /* PlayerEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlayerEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		8496CE7D277D76640000C4DF /* SportTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportTableViewCell.swift; sourceTree = "<group>"; };
 		8496CE7F277D77400000C4DF /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		8496CE81277D7A150000C4DF /* PlayerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTableViewCell.swift; sourceTree = "<group>"; };
+		8496CE83277D804D0000C4DF /* imageUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +81,10 @@
 				8496CE5C277CF90E0000C4DF /* AppDelegate.swift */,
 				8496CE5E277CF90E0000C4DF /* SceneDelegate.swift */,
 				8496CE62277CF90E0000C4DF /* Main.storyboard */,
+				8496CE83277D804D0000C4DF /* imageUIView.swift */,
 				8496CE73277CF93D0000C4DF /* SportViewController.swift */,
 				8496CE7F277D77400000C4DF /* PlayerViewController.swift */,
+				8496CE81277D7A150000C4DF /* PlayerTableViewCell.swift */,
 				8496CE7D277D76640000C4DF /* SportTableViewCell.swift */,
 				8496CE68277CF90F0000C4DF /* Assets.xcassets */,
 				8496CE6A277CF90F0000C4DF /* LaunchScreen.storyboard */,
@@ -166,6 +172,8 @@
 				8496CE67277CF90E0000C4DF /* SportApp.xcdatamodeld in Sources */,
 				8496CE5F277CF90E0000C4DF /* SceneDelegate.swift in Sources */,
 				8496CE7C277D763A0000C4DF /* PlayerEntity+CoreDataProperties.swift in Sources */,
+				8496CE82277D7A150000C4DF /* PlayerTableViewCell.swift in Sources */,
+				8496CE84277D804D0000C4DF /* imageUIView.swift in Sources */,
 				8496CE74277CF93D0000C4DF /* SportViewController.swift in Sources */,
 				8496CE7A277D763A0000C4DF /* SportEntity+CoreDataProperties.swift in Sources */,
 				8496CE80277D77400000C4DF /* PlayerViewController.swift in Sources */,
