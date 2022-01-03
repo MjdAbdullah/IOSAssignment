@@ -16,14 +16,43 @@ class LoginViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    private let scrollView: UIScrollView = {
+            let scrollView = UIScrollView()
+            
+            scrollView.clipsToBounds = true
+            return scrollView
+        }()
+        
+        private let emailField: UITextField = {
+            let field = UITextField()
+            field.autocapitalizationType = .none
+            field.autocorrectionType = .no
+            field.returnKeyType = .continue
+            field.layer.cornerRadius = 12
+            field.layer.borderWidth = 1
+            field.layer.borderColor = UIColor.lightGray.cgColor
+            field.placeholder = "Email Address..."
+            
+            field.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 5, height: 0))
+            field.leftViewMode = .always
+            field.backgroundColor = .white
+            return field
+        }()
+        private let passwordField: UITextField = {
+            let field = UITextField()
+            field.autocapitalizationType = .none
+            field.autocorrectionType = .no
+            field.returnKeyType = .done
+            field.layer.cornerRadius = 12
+            field.layer.borderWidth = 1
+            field.layer.borderColor = UIColor.lightGray.cgColor
+            field.placeholder = "Password..."
+            
+            field.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 5, height: 0))
+            field.leftViewMode = .always
+            field.backgroundColor = .white
+            field.isSecureTextEntry = true
+            return field
+        }()
 
 }
