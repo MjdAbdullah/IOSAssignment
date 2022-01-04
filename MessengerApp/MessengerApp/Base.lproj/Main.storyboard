@@ -107,10 +107,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="userProfile" translatesAutoresizingMaskIntoConstraints="NO" id="Dzh-zk-Dgr">
-                                <rect key="frame" x="122" y="128" width="170.5" height="170.5"/>
+                                <rect key="frame" x="132" y="128" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="5M4-yp-DIb"/>
+                                    <constraint firstAttribute="width" constant="150" id="jzd-fu-7Zd"/>
+                                </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="CSG-xV-Cux">
-                                <rect key="frame" x="20" y="318.5" width="374" height="240.5"/>
+                                <rect key="frame" x="20" y="298" width="374" height="240.5"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sYR-ok-spj">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
@@ -171,6 +175,7 @@
                         <outlet property="fFirstName" destination="sYR-ok-spj" id="gaS-aS-NlB"/>
                         <outlet property="fLastName" destination="a8T-vF-hq4" id="64f-r8-gP9"/>
                         <outlet property="fPassword" destination="nEq-fg-jyH" id="a0y-JR-ghv"/>
+                        <outlet property="imageView" destination="Dzh-zk-Dgr" id="yuc-WL-nn0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ink-Td-Let" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
