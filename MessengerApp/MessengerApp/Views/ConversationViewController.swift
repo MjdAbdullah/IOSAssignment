@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
 class ConversationViewController: UIViewController {
     // check to see if user is signed in using ... user defaults
@@ -18,6 +19,15 @@ class ConversationViewController: UIViewController {
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        //to add new user need to:
+        // 1- creat firebase refrence
+        // 2- get all user dictionary
+        // 3- update user dictionary with anther user object
+        // 4- send the udate user dictionary to firebase
+        
+        // database refrense
+        
+        // Defults user
         let isLoggedIn = UserDefaults.standard.bool(forKey: "")
         if !isLoggedIn {
             // present login view controller

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
 class RegisterViewController: UIViewController {
     
@@ -38,8 +39,6 @@ class RegisterViewController: UIViewController {
 }
 
 extension RegisterViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-    
-    
     
     // get results of user taking picture or selecting from camera roll
     func presentPhotoActionSheet(){
@@ -86,4 +85,9 @@ extension RegisterViewController: UIImagePickerControllerDelegate, UINavigationC
         picker.dismiss(animated: true, completion: nil)
     }
     
+}
+// database
+extension RegisterViewController {
+    
+
 }
