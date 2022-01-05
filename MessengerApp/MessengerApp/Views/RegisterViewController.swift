@@ -7,6 +7,7 @@
 
 import UIKit
 import FirebaseDatabase
+import Firebase
 
 class RegisterViewController: UIViewController {
     
@@ -22,7 +23,9 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var fPassword: UITextField!
     // button register
     @IBAction func bRegister(_ sender: Any) {
-        
+        if let email = fEmail.text, let password = fPassword.text {
+            registerUser(email: email, password: password)
+        }
     }
     
     override func viewDidLoad() {
@@ -89,5 +92,15 @@ extension RegisterViewController: UIImagePickerControllerDelegate, UINavigationC
 // database
 extension RegisterViewController {
     
+    func registerUser(email: String, password: String){
+        FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password, completion: { authResult , error  in
+            guard let result = authResult, error == nil else {
+                print("Error creating user")
+                return
+            }
+            let user = result.user
+            print("Created User: \(user)")
+        })
+    }
 
 }
