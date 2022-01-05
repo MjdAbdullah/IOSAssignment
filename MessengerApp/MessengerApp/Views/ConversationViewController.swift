@@ -7,6 +7,7 @@
 
 import UIKit
 import FirebaseDatabase
+import Firebase
 
 class ConversationViewController: UIViewController {
     // check to see if user is signed in using ... user defaults
@@ -15,7 +16,13 @@ class ConversationViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
+        do {
+            try FirebaseAuth.Auth.auth().signOut()
+        }
+        catch {
+            print("somthing wrong")
+        }
+        DatabaseManger.shared.test() // call test!
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -25,11 +32,22 @@ class ConversationViewController: UIViewController {
         // 3- update user dictionary with anther user object
         // 4- send the udate user dictionary to firebase
         
-        // database refrense
-        
         // Defults user
-        let isLoggedIn = UserDefaults.standard.bool(forKey: "")
+        /*let isLoggedIn = UserDefaults.standard.bool(forKey: "")
         if !isLoggedIn {
+            // present login view controller
+            let vc = LoginViewController()
+            let nav = UINavigationController(rootViewController: vc)
+            nav.modalPresentationStyle = .fullScreen
+            present(nav, animated: false)
+        }*/
+        
+        validateAuth()
+    }
+
+    private func validateAuth(){
+        // current user is set automatically when you log a user in
+        if FirebaseAuth.Auth.auth().currentUser == nil {
             // present login view controller
             let vc = LoginViewController()
             let nav = UINavigationController(rootViewController: vc)
@@ -37,15 +55,5 @@ class ConversationViewController: UIViewController {
             present(nav, animated: false)
         }
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
